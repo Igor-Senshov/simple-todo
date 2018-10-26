@@ -1,0 +1,44 @@
+{
+  "name": "simpletodo",
+  "version": "1.0.0",
+  "description": "Simple todo app",
+  "main": "components/app.js",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "webpack --config webpack.config.js",
+    "relay": "relay-compiler --src ./components --schema ./schema.graphql",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Igor Senshov",
+  "license": "MIT",
+  "dependencies": {
+    "dompurify": "^1.0.8",
+    "express": "^4.16.4",
+    "graphql": "^14.0.2",
+    "postcss-import": "^12.0.0",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-relay": "^1.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.1.5",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.2",
+    "babel-plugin-relay": "^1.6.2",
+    "css-loader": "^1.0.0",
+    "cssnano": "^4.1.0",
+    "postcss-loader": "^3.0.0",
+    "precss": "^3.1.2",
+    "react-hot-loader": "^4.3.6",
+    "relay-compiler": "^1.6.2",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  }
+}
